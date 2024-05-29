@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h3 class="logo"><img src="background.jpg" height="100px" width="80px"></h3>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#card3-body">Services</a>
+            <a href="#contact-section">Contact</a>
+            <a href="#" onclick="downloadCV()">CV</a>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <img src="./Stars.png" alt="stars" id="stars">
+        <img src="./Moon.png" alt="moon" id="moon">
+        <h1 class="myname" id="text">I'm <span class="auto-type"></span></h1>
+        <img src="./Mount1.png" alt="mountains" id="mount1">
+        <img src="./Mount2.png" alt="mountains" id="mount2">
+        <img src="./Mount3.png" alt="mountains" id="mount3">
+    </section>
+
+
+    <div id="About" style="background-color: grey;">
+        <p>
+            <h3 id="About-heading">About Me</h3>
+            <br>
+            As a computer science and design student, I have a dual passion for competitive coding and frontend development. I enjoy participating in coding competitions, where I apply my algorithmic thinking and optimization skills to solve challenging problems. I also love creating user-friendly and visually appealing web applications, using my proficiency in PHP, HTML5, and MySQL. 
+            <br>
+Previously, I have worked as a web developer at DAPS ,Coding Samurai and InternPe, where I gained valuable experience and feedback on my projects. My goal is to combine my problem-solving acumen and creative flair to deliver exceptional digital solutions that enhance user experiences and meet client needs. I am always eager to learn new technologies and techniques, and to explore the intersection of computer science and design.
+<br>
+For more details visit <a href="https://www.linkedin.com/in/het-mehta-5b9a47236/">Linkedin Profile</a>
+        </p>
+    </div>
+
+    
+    
+
+    <div class="sec">
+        
+        <div class="card1">
+            <img src="mountains.webp" class="card1-img">
+            <div class="card1-body">
+                <div class="card1-title">Projects</div>
+                <p>
+                    <a href="https://github.com/mehtahet619/analogclockusingHTML5-CSS3-JS">Analog Clock</a><br>
+                    <a href="https://github.com/mehtahet619/SimpleCalaculatorUsingHTML-5-CSS3-JS/tree/main">Simple Calculator</a>
+                </p>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="mountains.webp" class="card2-img">
+            <div class="card2-body">
+                <div class="card2-title">Hobbies</div>
+                <p><li>Football</li><li>Table Tennis</li><li>Cricket</li><li>Chess</li><li>Swimming</li><li>Writer</li></p>
+            </div>
+        </div>
+        <div class="card3">
+            <img src="mountains.webp" class="card3-img">
+            <div class="card3-body">
+                <div class="card3-title" id="card3-body">Skills</div>
+                <p>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Computer Networking</li>
+                    <li>Ethical Hacking</li>
+                    <li>Operating System</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C++</li>
+                </p>
+            </div>
+        </div>
+    </div>
+
+       
+        <footer>
+        <div id="contact-section" class="Contact">
+            <h1 class="Email"><a href="mailto:mehtahet619@gmail.com">Mailid : mehtahet619@gmail.com</a></h1>
+            <!-- <h1 class="Phone"><a href="tel:+917016405232">PhoneNo:+917016405232</a></h1> -->
+            <br><br>
+            <form class="callback">
+                <h2>Request a callback</h2>
+                <br><br><br>
+                <div class="inpu-grp">
+                    <input type="text" placeholder="Name">
+                    <label for="name">Your Name</label>
+                </div> 
+
+                
+                <div class="inpu-grp">
+                    <input type="email" placeholder="Email">
+                    <label for="email">Email</label>
+                </div> 
+
+                
+                <div class="inpu-grp">
+                    <input type="number" placeholder="Phone number">
+                    <label for="number">Phone Number</label>
+                </div> 
+                
+                
+                <button type="submit">CALL ME</button>
+            </form>
+        </div>
+        
+        </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+    
+    <script src="./script.js"></script>
+</body>
+</html>
