@@ -1,9 +1,14 @@
 <h1>Table of Contents</h1>
 About Me
+<br>
 Projects
+<br>
 Skills
+<br>
 Contact
+<br>
 About Me
+<br>
 I am currently a campus ambassador at Geeks for Geeks and an active member of CSI.With experience in Web Developement ,Cybersecurity, I am passionate about new technologies and learning.
 
 Contact
