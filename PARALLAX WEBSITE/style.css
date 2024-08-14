@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #2C3242;
+    --secondary: #7d97e8;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#star{
+   
+    background-image: url("stars.png");
+    background-size: 100px 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+#About{
+    color:black;
+    
+    
+}
+
+.navigation a:hover, .navigation a.active {
+    background-color: white;
+    color: var(--primary);
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.parallax #text {
+    position: absolute;
+    font-size: 5em;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--secondary);
+}
+
+.sec {
+    position: relative;
+    background-color: var(--primary);
+    padding: 100px;
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap if there are too many to fit in one row */
+}
+
+.sec h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.myname {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myname h1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #020412;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: yellow;
+}
+.card1, .card2, .card3 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid white;
+    margin: 10px; 
+    transition: transform 0.3s ease-in-out;    
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.card1-img, .card2-img, .card3-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1-body, .card2-body, .card3-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center; 
+}
+
+.card1:hover .card1-body, .card2:hover .card2-body, .card3:hover .card3-body {
+    opacity: 1; 
+}
+
+.card1-title, .card2-title, .card3-title {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 24px; /* Adjust font size */
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Contact {
+    background-color: #ffffff;
+    font-size: small;
+    text-align: center;
+    display: flex;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.Email{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inpu-grp {
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #000000;
+    color: #000000;
+    background: transparent;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #5b5b5b;
+    cursor: text;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 0;
+    color: #000000;
+    outline: none;
+    background: transparent;
+    border: 1px solid #c70000;
+    border-radius: 45%;
+    width: 10%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+input:focus~label, input:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+#stars{
+    color: #2C3242;
+    
+}
+
+label.darkmodetoggle{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    display: block;
+    border-radius: 200px;
+    background:#ebebeb;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ label.darkmodetoggle:after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 180px
+    /* transition:0.3s; */
+ }
+input.darkmodetoggle{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input.darkmodetoggle:checked + label{
+    background: #2C3242;
+}
+
+input:checked + label:after{
+    left: 95px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+
+}
